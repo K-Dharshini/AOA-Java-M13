@@ -4,7 +4,6 @@
 ## Aim:
 To Write a Java program for N queens using backtracking approach. You are given an integer N. For a given N x N chessboard, find a way to place 'N' queens such that no queen can attack any other queen on the chessboard. A queen can be attacked when it lies in the same row, column, or the same diagonal as any of the other queens. You have to print one such configuration.
 
-**Chess Board**
 <img width="241" height="209" alt="image" src="https://github.com/user-attachments/assets/96aacb61-4f34-423f-b324-5e34454e42b8" />
 
 **Note:**
