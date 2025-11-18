@@ -1,7 +1,7 @@
 
 # EX 3E Generate Permutations using Backtracking
-## DATE:
-## AIM:
+## Date:
+## Aim:
 To write a Java program to for given constraints. Given an array nums of distinct integers, return all the possible Permutation. You can return the answer in any order.
 
 **Example:**
