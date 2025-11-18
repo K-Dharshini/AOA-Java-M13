@@ -1,4 +1,3 @@
-
 # EX 3C Tug of War problem - Backtracking
 ## Date:
 ## Aim:
@@ -20,11 +19,22 @@ To write a Java program to for given constraints. Given an integer array nums, r
 - 1 <= nums[i] <= 100
 
 ## Algorithm
-1. 
-2. 
-3. 
-4.  
-5.   
+1. **Compute Total Sum**  
+   Traverse the array and calculate the total sum of all elements.  
+   If the total sum is odd, return `false` immediately (cannot split into two equal subsets).
+2. **Determine Target Subset Sum**  
+   Compute `subSetSum = totalSum / 2`.  
+   This is the value each subset must sum to for a valid partition.
+3. **Initialize DP Array**  
+   Create a boolean array `dp[subSetSum + 1]` where `dp[j]` indicates whether a subset with sum `j` is possible.  
+   Set `dp[0] = true` (zero sum is always achievable).
+4. **Fill DP Using Each Number**  
+   For each number in the array:  
+   Iterate backwards from `subSetSum` down to the current number, updating:  
+   `dp[j] = dp[j] || dp[j - curr]`.
+5. **Return Result**  
+   After processing all numbers, return the value of `dp[subSetSum]`,  
+   which indicates whether an equal-sum partition is possible.   
 
 ## Program:
 ```
